@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 0eb3fcfcd28e51948a808c011c8c6f25
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 328595
+  packageName: Cavrnus | Collaboration with Voice & Chat
+  packageVersion: 3.1.7
+  assetPath: Assets/cavrnus-spatial-connector-unity/Samples/CollaborationShowcase/Assets/UI/Prefabs/MaterialPicker/PF_MaterialSelectorMenu.prefab
+  uploadId: 795508

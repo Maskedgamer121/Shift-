@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 51692631da5743d4bb47150dec59b664
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 328595
+  packageName: Cavrnus | Collaboration with Voice & Chat
+  packageVersion: 3.1.7
+  assetPath: Assets/cavrnus-spatial-connector-unity/Samples/CollaborationShowcase/Assets/UI/Prefabs/ImageSelector/PF_ImageSelctorUI.prefab
+  uploadId: 795508

@@ -1,0 +1,40 @@
+fileFormatVersion: 2
+guid: db21d4c45551f2e438c6b6f8fcb09dd6
+PluginImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  iconMap: {}
+  executionOrder: {}
+  defineConstraints: []
+  isPreloaded: 0
+  isOverridable: 0
+  isExplicitlyReferenced: 0
+  validateReferences: 1
+  platformData:
+  - first:
+      Android: Android
+    second:
+      enabled: 1
+      settings:
+        CPU: ARM64
+  - first:
+      Any: 
+    second:
+      enabled: 0
+      settings: {}
+  - first:
+      Editor: Editor
+    second:
+      enabled: 0
+      settings:
+        DefaultValueInitialized: true
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 328595
+  packageName: Cavrnus | Collaboration with Voice & Chat
+  packageVersion: 3.1.7
+  assetPath: Assets/cavrnus-spatial-connector-unity/Runtime/Core/CavrnusPlugins/RTC/LiveSwitch/Android/libs/arm64-v8a/liblibopusfm.so
+  uploadId: 795508

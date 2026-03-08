@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: f8516abbcc330d445b3f5835a170232b
+TextScriptImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 328595
+  packageName: Cavrnus | Collaboration with Voice & Chat
+  packageVersion: 3.1.7
+  assetPath: Assets/cavrnus-spatial-connector-unity/Runtime/Core/CavrnusPlugins/RTC/LiveSwitch/FM.LiveSwitch.AudioProcessing.xml
+  uploadId: 795508

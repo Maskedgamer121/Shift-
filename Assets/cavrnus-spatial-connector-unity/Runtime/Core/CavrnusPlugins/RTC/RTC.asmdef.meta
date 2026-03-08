@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 90b8665e6fe27d9409b1da25d7efd890
+AssemblyDefinitionImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 328595
+  packageName: Cavrnus | Collaboration with Voice & Chat
+  packageVersion: 3.1.7
+  assetPath: Assets/cavrnus-spatial-connector-unity/Runtime/Core/CavrnusPlugins/RTC/RTC.asmdef
+  uploadId: 795508

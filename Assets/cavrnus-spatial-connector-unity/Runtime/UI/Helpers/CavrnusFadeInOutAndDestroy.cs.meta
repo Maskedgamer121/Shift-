@@ -1,0 +1,10 @@
+﻿fileFormatVersion: 2
+guid: cad1c371e5804aff9e5b5bd554f9c9b5
+timeCreated: 1727301200
+AssetOrigin:
+  serializedVersion: 1
+  productId: 328595
+  packageName: Cavrnus | Collaboration with Voice & Chat
+  packageVersion: 3.1.7
+  assetPath: Assets/cavrnus-spatial-connector-unity/Runtime/UI/Helpers/CavrnusFadeInOutAndDestroy.cs
+  uploadId: 795508

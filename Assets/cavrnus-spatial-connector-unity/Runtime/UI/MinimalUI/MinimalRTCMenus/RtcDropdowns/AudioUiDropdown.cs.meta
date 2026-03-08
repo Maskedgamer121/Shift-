@@ -1,0 +1,10 @@
+fileFormatVersion: 2
+guid: ad2abead0e154231a63fc32b2a330548
+timeCreated: 1725992375
+AssetOrigin:
+  serializedVersion: 1
+  productId: 328595
+  packageName: Cavrnus | Collaboration with Voice & Chat
+  packageVersion: 3.1.7
+  assetPath: Assets/cavrnus-spatial-connector-unity/Runtime/UI/MinimalUI/MinimalRTCMenus/RtcDropdowns/AudioUiDropdown.cs
+  uploadId: 795508

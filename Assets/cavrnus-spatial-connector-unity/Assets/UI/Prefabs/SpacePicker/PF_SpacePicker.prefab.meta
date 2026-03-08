@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 3bff16a09419a114ead151503f2b596c
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 328595
+  packageName: Cavrnus | Collaboration with Voice & Chat
+  packageVersion: 3.1.7
+  assetPath: Assets/cavrnus-spatial-connector-unity/Assets/UI/Prefabs/SpacePicker/PF_SpacePicker.prefab
+  uploadId: 795508

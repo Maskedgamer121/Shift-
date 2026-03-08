@@ -1,0 +1,10 @@
+fileFormatVersion: 2
+guid: 7526a5c92ef747619550b92c7ef2dc7a
+timeCreated: 1735847475
+AssetOrigin:
+  serializedVersion: 1
+  productId: 328595
+  packageName: Cavrnus | Collaboration with Voice & Chat
+  packageVersion: 3.1.7
+  assetPath: Assets/cavrnus-spatial-connector-unity/Runtime/Core/CavrnusPlugins/RTC/CavrnusLSAudioClipSource.cs
+  uploadId: 795508

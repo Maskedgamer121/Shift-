@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: 31fa1d29ef10bd44fbf225063c91e530
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 328595
+  packageName: Cavrnus | Collaboration with Voice & Chat
+  packageVersion: 3.1.7
+  assetPath: Assets/cavrnus-spatial-connector-unity/Runtime/API/CavrnusTypes/CavrnusOutputDevice.cs
+  uploadId: 795508

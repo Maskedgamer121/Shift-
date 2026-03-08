@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 443ffe9dd95a9dc41b5e3728882de96c
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 328595
+  packageName: Cavrnus | Collaboration with Voice & Chat
+  packageVersion: 3.1.7
+  assetPath: Assets/cavrnus-spatial-connector-unity/Assets/Environment/SO_GlobalVolumeProfile.asset
+  uploadId: 795508

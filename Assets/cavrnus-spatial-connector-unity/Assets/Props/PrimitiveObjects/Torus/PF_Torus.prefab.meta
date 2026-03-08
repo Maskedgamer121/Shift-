@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 85bbc2f1d085e5f41bf6f5670143f43f
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 328595
+  packageName: Cavrnus | Collaboration with Voice & Chat
+  packageVersion: 3.1.7
+  assetPath: Assets/cavrnus-spatial-connector-unity/Assets/Props/PrimitiveObjects/Torus/PF_Torus.prefab
+  uploadId: 795508

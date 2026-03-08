@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: bda6fbd37ca515643a4e4ce28ef7bad0
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 7400000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 328595
+  packageName: Cavrnus | Collaboration with Voice & Chat
+  packageVersion: 3.1.7
+  assetPath: Assets/cavrnus-spatial-connector-unity/Assets/Avatars/Animations/IsolatedAnimations/Flying/Fly_Falling_Idle.anim
+  uploadId: 795508

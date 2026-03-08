@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: eef38898553c92d42b9f405f2591c762
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 2100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 328595
+  packageName: Cavrnus | Collaboration with Voice & Chat
+  packageVersion: 3.1.7
+  assetPath: Assets/cavrnus-spatial-connector-unity/Samples/CollaborationShowcase/Assets/Environment/Floor/M_Floor.mat
+  uploadId: 795508

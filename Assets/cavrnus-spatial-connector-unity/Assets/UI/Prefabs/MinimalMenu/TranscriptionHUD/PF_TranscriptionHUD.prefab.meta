@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 70c7eed66a0767a4599c7e2237576182
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 328595
+  packageName: Cavrnus | Collaboration with Voice & Chat
+  packageVersion: 3.1.7
+  assetPath: Assets/cavrnus-spatial-connector-unity/Assets/UI/Prefabs/MinimalMenu/TranscriptionHUD/PF_TranscriptionHUD.prefab
+  uploadId: 795508

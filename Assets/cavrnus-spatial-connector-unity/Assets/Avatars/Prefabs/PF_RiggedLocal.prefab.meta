@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 2298a8a1d58c35940989338ffb0391bf
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 328595
+  packageName: Cavrnus | Collaboration with Voice & Chat
+  packageVersion: 3.1.7
+  assetPath: Assets/cavrnus-spatial-connector-unity/Assets/Avatars/Prefabs/PF_RiggedLocal.prefab
+  uploadId: 795508

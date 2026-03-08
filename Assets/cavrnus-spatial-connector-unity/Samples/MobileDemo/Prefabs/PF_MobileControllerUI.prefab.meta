@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 0fc6c2765067b1f42b85efcf5d27883a
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 328595
+  packageName: Cavrnus | Collaboration with Voice & Chat
+  packageVersion: 3.1.7
+  assetPath: Assets/cavrnus-spatial-connector-unity/Samples/MobileDemo/Prefabs/PF_MobileControllerUI.prefab
+  uploadId: 795508

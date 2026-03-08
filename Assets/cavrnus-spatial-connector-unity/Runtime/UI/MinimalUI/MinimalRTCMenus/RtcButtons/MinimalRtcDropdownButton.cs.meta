@@ -1,0 +1,10 @@
+fileFormatVersion: 2
+guid: 5d8f2982fa7341e1ba941e51723d33ad
+timeCreated: 1725991744
+AssetOrigin:
+  serializedVersion: 1
+  productId: 328595
+  packageName: Cavrnus | Collaboration with Voice & Chat
+  packageVersion: 3.1.7
+  assetPath: Assets/cavrnus-spatial-connector-unity/Runtime/UI/MinimalUI/MinimalRTCMenus/RtcButtons/MinimalRtcDropdownButton.cs
+  uploadId: 795508

@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 06180708a2809c246a077e70070c7e04
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 328595
+  packageName: Cavrnus | Collaboration with Voice & Chat
+  packageVersion: 3.1.7
+  assetPath: Assets/cavrnus-spatial-connector-unity/Samples/CollaborationShowcase/Assets/Props/Board/Prefabs/PF_Board.prefab
+  uploadId: 795508

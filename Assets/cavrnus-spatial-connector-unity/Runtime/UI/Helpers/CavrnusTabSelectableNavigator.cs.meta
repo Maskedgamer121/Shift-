@@ -1,0 +1,10 @@
+fileFormatVersion: 2
+guid: aa9903c177004589b0909102d795bf25
+timeCreated: 1709759589
+AssetOrigin:
+  serializedVersion: 1
+  productId: 328595
+  packageName: Cavrnus | Collaboration with Voice & Chat
+  packageVersion: 3.1.7
+  assetPath: Assets/cavrnus-spatial-connector-unity/Runtime/UI/Helpers/CavrnusTabSelectableNavigator.cs
+  uploadId: 795508

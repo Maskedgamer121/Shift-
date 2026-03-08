@@ -1,0 +1,10 @@
+﻿fileFormatVersion: 2
+guid: 9043936615404c16a937625fbf87e214
+timeCreated: 1712691527
+AssetOrigin:
+  serializedVersion: 1
+  productId: 328595
+  packageName: Cavrnus | Collaboration with Voice & Chat
+  packageVersion: 3.1.7
+  assetPath: Assets/cavrnus-spatial-connector-unity/Samples/CollaborationShowcase/Runtime/Menus/SyncDirectionalLightMenu/CavrnusDirectionalLightManager.cs
+  uploadId: 795508

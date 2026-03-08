@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 2b65559f0b9cfdf4db68c4bdcb8d7c9d
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 328595
+  packageName: Cavrnus | Collaboration with Voice & Chat
+  packageVersion: 3.1.7
+  assetPath: Assets/cavrnus-spatial-connector-unity/Samples/CollaborationShowcase/Modules/PF_SyncMaterialLights.prefab
+  uploadId: 795508

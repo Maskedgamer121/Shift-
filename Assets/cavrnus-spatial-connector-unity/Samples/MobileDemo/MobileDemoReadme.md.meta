@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 08b2d020f4d06474a81a0ed7e24c7a79
+TextScriptImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 328595
+  packageName: Cavrnus | Collaboration with Voice & Chat
+  packageVersion: 3.1.7
+  assetPath: Assets/cavrnus-spatial-connector-unity/Samples/MobileDemo/MobileDemoReadme.md
+  uploadId: 795508

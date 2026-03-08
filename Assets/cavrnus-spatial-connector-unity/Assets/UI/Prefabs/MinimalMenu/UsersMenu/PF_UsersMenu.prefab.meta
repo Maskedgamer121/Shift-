@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 7e8298ffd799b974b96f8f38087ceb31
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 328595
+  packageName: Cavrnus | Collaboration with Voice & Chat
+  packageVersion: 3.1.7
+  assetPath: Assets/cavrnus-spatial-connector-unity/Assets/UI/Prefabs/MinimalMenu/UsersMenu/PF_UsersMenu.prefab
+  uploadId: 795508

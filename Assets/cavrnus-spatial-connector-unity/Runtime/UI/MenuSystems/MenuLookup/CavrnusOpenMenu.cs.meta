@@ -1,0 +1,10 @@
+﻿fileFormatVersion: 2
+guid: 4d5f0eb609f7434a88358ad92647be31
+timeCreated: 1751519090
+AssetOrigin:
+  serializedVersion: 1
+  productId: 328595
+  packageName: Cavrnus | Collaboration with Voice & Chat
+  packageVersion: 3.1.7
+  assetPath: Assets/cavrnus-spatial-connector-unity/Runtime/UI/MenuSystems/MenuLookup/CavrnusOpenMenu.cs
+  uploadId: 795508

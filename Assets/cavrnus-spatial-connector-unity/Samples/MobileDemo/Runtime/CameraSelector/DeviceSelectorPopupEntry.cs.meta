@@ -1,0 +1,10 @@
+﻿fileFormatVersion: 2
+guid: 637fcbfefabb432b8f1ec3b1ce9b5108
+timeCreated: 1725561976
+AssetOrigin:
+  serializedVersion: 1
+  productId: 328595
+  packageName: Cavrnus | Collaboration with Voice & Chat
+  packageVersion: 3.1.7
+  assetPath: Assets/cavrnus-spatial-connector-unity/Samples/MobileDemo/Runtime/CameraSelector/DeviceSelectorPopupEntry.cs
+  uploadId: 795508

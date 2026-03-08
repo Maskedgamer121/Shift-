@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 05a97ca3106066f4b8c959007b7b8d5c
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 328595
+  packageName: Cavrnus | Collaboration with Voice & Chat
+  packageVersion: 3.1.7
+  assetPath: Assets/cavrnus-spatial-connector-unity/Samples/CollaborationShowcase/Assets/UI/Prefabs/SyncStrings/PF_SunlightSyncMenu.prefab
+  uploadId: 795508

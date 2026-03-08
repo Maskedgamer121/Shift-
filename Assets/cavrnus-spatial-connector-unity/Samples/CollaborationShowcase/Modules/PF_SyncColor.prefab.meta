@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 6582d315e666a64479426dce1c87407d
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 328595
+  packageName: Cavrnus | Collaboration with Voice & Chat
+  packageVersion: 3.1.7
+  assetPath: Assets/cavrnus-spatial-connector-unity/Samples/CollaborationShowcase/Modules/PF_SyncColor.prefab
+  uploadId: 795508

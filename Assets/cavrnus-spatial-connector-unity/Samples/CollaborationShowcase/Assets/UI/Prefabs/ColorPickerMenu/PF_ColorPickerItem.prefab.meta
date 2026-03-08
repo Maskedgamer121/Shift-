@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: b65d918002c8674449d62b330365ceda
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 328595
+  packageName: Cavrnus | Collaboration with Voice & Chat
+  packageVersion: 3.1.7
+  assetPath: Assets/cavrnus-spatial-connector-unity/Samples/CollaborationShowcase/Assets/UI/Prefabs/ColorPickerMenu/PF_ColorPickerItem.prefab
+  uploadId: 795508

@@ -1,0 +1,161 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>FM.LiveSwitch.XirSys</name>
+    </assembly>
+    <members>
+        <member name="T:FM.LiveSwitch.XirSys.V2.Client">
+            <summary>
+            A XirSys v2 client.
+            </summary>
+        </member>
+        <member name="P:FM.LiveSwitch.XirSys.V2.Client.DefaultEndpoint">
+            <summary>
+            Gets or sets the default HTTP endpoint.
+            Defaults to "https://service.xirsys.com/ice".
+            </summary>
+        </member>
+        <member name="P:FM.LiveSwitch.XirSys.V2.Client.Endpoint">
+            <summary>
+            Gets or sets the HTTP endpoint.
+            </summary>
+        </member>
+        <member name="P:FM.LiveSwitch.XirSys.V2.Client.Ident">
+            <summary>
+            Gets or sets the "ident" value.
+            </summary>
+        </member>
+        <member name="P:FM.LiveSwitch.XirSys.V2.Client.Secret">
+            <summary>
+            Gets or sets the "secret" value.
+            </summary>
+        </member>
+        <member name="P:FM.LiveSwitch.XirSys.V2.Client.Domain">
+            <summary>
+            Gets or sets the "domain" value.
+            </summary>
+        </member>
+        <member name="P:FM.LiveSwitch.XirSys.V2.Client.Application">
+            <summary>
+            Gets or sets the "application" value.
+            Defaults to "default".
+            </summary>
+        </member>
+        <member name="P:FM.LiveSwitch.XirSys.V2.Client.Room">
+            <summary>
+            Gets or sets the "room" value.
+            Defaults to "default".
+            </summary>
+        </member>
+        <member name="P:FM.LiveSwitch.XirSys.V2.Client.Secure">
+            <summary>
+            Gets or sets the "secure" value.
+            Defaults to <c>true</c>.
+            </summary>
+        </member>
+        <member name="M:FM.LiveSwitch.XirSys.V2.Client.#ctor(System.String,System.String,System.String)">
+            <summary>
+            Initializes a new instance of the <see cref="T:FM.LiveSwitch.XirSys.V2.Client"/> class.
+            </summary>
+            <param name="ident">The "ident" value.</param>
+            <param name="secret">The "secret" value.</param>
+            <param name="domain">The "domain" value.</param>
+        </member>
+        <member name="M:FM.LiveSwitch.XirSys.V2.Client.#ctor(System.String,System.String,System.String,System.String)">
+            <summary>
+            Initializes a new instance of the <see cref="T:FM.LiveSwitch.XirSys.V2.Client"/> class.
+            </summary>
+            <param name="ident">The "ident" value.</param>
+            <param name="secret">The "secret" value.</param>
+            <param name="domain">The "domain" value.</param>
+            <param name="application">The "application" value.</param>
+        </member>
+        <member name="M:FM.LiveSwitch.XirSys.V2.Client.#ctor(System.String,System.String,System.String,System.String,System.String)">
+            <summary>
+            Initializes a new instance of the <see cref="T:FM.LiveSwitch.XirSys.V2.Client"/> class.
+            </summary>
+            <param name="ident">The "ident" value.</param>
+            <param name="secret">The "secret" value.</param>
+            <param name="domain">The "domain" value.</param>
+            <param name="application">The "application" value.</param>
+            <param name="room">The "room" value.</param>
+        </member>
+        <member name="M:FM.LiveSwitch.XirSys.V2.Client.#ctor(System.String,System.String,System.String,System.String,System.String,System.Boolean)">
+            <summary>
+            Initializes a new instance of the <see cref="T:FM.LiveSwitch.XirSys.V2.Client"/> class.
+            </summary>
+            <param name="ident">The "ident" value.</param>
+            <param name="secret">The "secret" value.</param>
+            <param name="domain">The "domain" value.</param>
+            <param name="application">The "application" value.</param>
+            <param name="room">The "room" value.</param>
+            <param name="secure">The "secure" value.</param>
+        </member>
+        <member name="M:FM.LiveSwitch.XirSys.V2.Client.GetIceServers">
+            <summary>
+            Gets an array of XirSys ICE servers.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:FM.LiveSwitch.XirSys.V3.Client">
+            <summary>
+            A XirSys v3 client.
+            </summary>
+        </member>
+        <member name="P:FM.LiveSwitch.XirSys.V3.Client.DefaultEndpoint">
+            <summary>
+            Gets or sets the default HTTP endpoint.
+            Defaults to "https://global.xirsys.net/_turn".
+            </summary>
+        </member>
+        <member name="P:FM.LiveSwitch.XirSys.V3.Client.Endpoint">
+            <summary>
+            Gets or sets the HTTP endpoint.
+            </summary>
+        </member>
+        <member name="P:FM.LiveSwitch.XirSys.V3.Client.Ident">
+            <summary>
+            Gets or sets the "ident" value.
+            </summary>
+        </member>
+        <member name="P:FM.LiveSwitch.XirSys.V3.Client.Secret">
+            <summary>
+            Gets or sets the "secret" value.
+            </summary>
+        </member>
+        <member name="P:FM.LiveSwitch.XirSys.V3.Client.Channel">
+            <summary>
+            Gets or sets the "channel" value.
+            </summary>
+        </member>
+        <member name="P:FM.LiveSwitch.XirSys.V3.Client.Secure">
+            <summary>
+            Gets or sets the "secure" value.
+            Defaults to <c>true</c>.
+            </summary>
+        </member>
+        <member name="M:FM.LiveSwitch.XirSys.V3.Client.#ctor(System.String,System.String,System.String)">
+            <summary>
+            Initializes a new instance of the <see cref="T:FM.LiveSwitch.XirSys.V3.Client"/> class.
+            </summary>
+            <param name="ident">The "ident" value.</param>
+            <param name="secret">The "secret" value.</param>
+            <param name="channel">The "channel" value.</param>
+        </member>
+        <member name="M:FM.LiveSwitch.XirSys.V3.Client.#ctor(System.String,System.String,System.String,System.Boolean)">
+            <summary>
+            Initializes a new instance of the <see cref="T:FM.LiveSwitch.XirSys.V3.Client"/> class.
+            </summary>
+            <param name="ident">The "ident" value.</param>
+            <param name="secret">The "secret" value.</param>
+            <param name="channel">The "channel" value.</param>
+            <param name="secure">The "secure" value.</param>
+        </member>
+        <member name="M:FM.LiveSwitch.XirSys.V3.Client.GetIceServers">
+            <summary>
+            Gets an array of XirSys ICE servers.
+            </summary>
+            <returns></returns>
+        </member>
+    </members>
+</doc>

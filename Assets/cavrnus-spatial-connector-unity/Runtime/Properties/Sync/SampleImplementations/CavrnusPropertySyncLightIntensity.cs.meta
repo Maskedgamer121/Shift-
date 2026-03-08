@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: 297f982282c37ad4c8ff0cd6d2cd9443
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 328595
+  packageName: Cavrnus | Collaboration with Voice & Chat
+  packageVersion: 3.1.7
+  assetPath: Assets/cavrnus-spatial-connector-unity/Runtime/Properties/Sync/SampleImplementations/CavrnusPropertySyncLightIntensity.cs
+  uploadId: 795508

@@ -1,0 +1,10 @@
+fileFormatVersion: 2
+guid: 0b544845c621425da0a07228928a9d29
+timeCreated: 1727721173
+AssetOrigin:
+  serializedVersion: 1
+  productId: 328595
+  packageName: Cavrnus | Collaboration with Voice & Chat
+  packageVersion: 3.1.7
+  assetPath: Assets/cavrnus-spatial-connector-unity/Runtime/Setup/CavrnusPackageInfo.cs
+  uploadId: 795508

@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 413c26bee1cf59148b787f44a288a9f1
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 328595
+  packageName: Cavrnus | Collaboration with Voice & Chat
+  packageVersion: 3.1.7
+  assetPath: Assets/cavrnus-spatial-connector-unity/Assets/UI/Prefabs/MenuSystems/Canvases/PF_DefaultCanvasLayerProvider.prefab
+  uploadId: 795508

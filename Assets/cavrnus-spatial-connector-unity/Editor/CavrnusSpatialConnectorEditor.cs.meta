@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: 388f1f9fd9ac5534ba06161f9d39a0a5
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 328595
+  packageName: Cavrnus | Collaboration with Voice & Chat
+  packageVersion: 3.1.7
+  assetPath: Assets/cavrnus-spatial-connector-unity/Editor/CavrnusSpatialConnectorEditor.cs
+  uploadId: 795508

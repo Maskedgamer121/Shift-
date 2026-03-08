@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: 8cd55bf99a9846e42af35a7ac3492b44
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 328595
+  packageName: Cavrnus | Collaboration with Voice & Chat
+  packageVersion: 3.1.7
+  assetPath: Assets/cavrnus-spatial-connector-unity/Runtime/Properties/Sync/SampleImplementations/CavrnusPropertySyncLocalTransform.cs
+  uploadId: 795508

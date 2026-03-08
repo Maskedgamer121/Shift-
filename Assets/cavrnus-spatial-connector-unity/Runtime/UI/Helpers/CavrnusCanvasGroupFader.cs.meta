@@ -1,0 +1,10 @@
+fileFormatVersion: 2
+guid: 00b84afecd2f47f2963f782cf428dd65
+timeCreated: 1713908930
+AssetOrigin:
+  serializedVersion: 1
+  productId: 328595
+  packageName: Cavrnus | Collaboration with Voice & Chat
+  packageVersion: 3.1.7
+  assetPath: Assets/cavrnus-spatial-connector-unity/Runtime/UI/Helpers/CavrnusCanvasGroupFader.cs
+  uploadId: 795508

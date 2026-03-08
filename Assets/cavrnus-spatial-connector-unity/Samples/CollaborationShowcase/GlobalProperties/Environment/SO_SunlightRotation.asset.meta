@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: f13fb867e0da6f846a742fb9739c9271
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 11400000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 328595
+  packageName: Cavrnus | Collaboration with Voice & Chat
+  packageVersion: 3.1.7
+  assetPath: Assets/cavrnus-spatial-connector-unity/Samples/CollaborationShowcase/GlobalProperties/Environment/SO_SunlightRotation.asset
+  uploadId: 795508

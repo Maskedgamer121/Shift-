@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: ac4195346dff68043b58aca7e7398d64
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 328595
+  packageName: Cavrnus | Collaboration with Voice & Chat
+  packageVersion: 3.1.7
+  assetPath: Assets/cavrnus-spatial-connector-unity/Samples/CollaborationShowcase/Assets/UI/Prefabs/Movement/PF_BindMovementMenu.prefab
+  uploadId: 795508

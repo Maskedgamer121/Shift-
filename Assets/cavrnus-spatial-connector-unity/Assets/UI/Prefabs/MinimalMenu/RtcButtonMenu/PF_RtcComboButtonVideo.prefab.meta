@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 82fdc12c19da1fc45959128eccee4afe
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 328595
+  packageName: Cavrnus | Collaboration with Voice & Chat
+  packageVersion: 3.1.7
+  assetPath: Assets/cavrnus-spatial-connector-unity/Assets/UI/Prefabs/MinimalMenu/RtcButtonMenu/PF_RtcComboButtonVideo.prefab
+  uploadId: 795508

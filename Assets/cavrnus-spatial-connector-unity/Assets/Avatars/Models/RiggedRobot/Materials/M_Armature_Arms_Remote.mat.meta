@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 1561034b7c521284699a0f8d34e59cd5
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 2100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 328595
+  packageName: Cavrnus | Collaboration with Voice & Chat
+  packageVersion: 3.1.7
+  assetPath: Assets/cavrnus-spatial-connector-unity/Assets/Avatars/Models/RiggedRobot/Materials/M_Armature_Arms_Remote.mat
+  uploadId: 795508

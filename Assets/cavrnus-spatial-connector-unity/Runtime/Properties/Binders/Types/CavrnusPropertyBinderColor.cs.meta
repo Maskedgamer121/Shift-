@@ -1,0 +1,10 @@
+﻿fileFormatVersion: 2
+guid: f1dd6f9ad4fe4078939d43c5b4d32261
+timeCreated: 1728077397
+AssetOrigin:
+  serializedVersion: 1
+  productId: 328595
+  packageName: Cavrnus | Collaboration with Voice & Chat
+  packageVersion: 3.1.7
+  assetPath: Assets/cavrnus-spatial-connector-unity/Runtime/Properties/Binders/Types/CavrnusPropertyBinderColor.cs
+  uploadId: 795508

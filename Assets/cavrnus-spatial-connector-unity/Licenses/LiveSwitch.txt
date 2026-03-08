@@ -1,0 +1,21 @@
+LICENSE
+
+Subject to Customer’s compliance with this Agreement, LIVESWITCH hereby grants 
+Customer a limited, revocable, personal, non-exclusive, non-transferable, 
+non-sublicenseable license until this Agreement or Customer’s Account is 
+terminated (the “Term”) to:
+
+(i) use the documentation and APIs LIVESWITCH makes available to Customer 
+    to create an original application that interfaces with the Services 
+    (“Customer Application”), and
+
+(ii) make the Services available to Customer’s end users (“End Users”) 
+     through the Customer Application.
+
+The foregoing license shall extend to Customer Affiliates, provided that such 
+Customer Affiliates are acting via Customer’s Account and provided further that 
+Customer remains jointly and severally liable for all acts and omissions of its 
+Affiliates.
+
+An “Affiliate,” with respect to a Party, means any entity that controls, is 
+controlled by, or is under common control with that Party.

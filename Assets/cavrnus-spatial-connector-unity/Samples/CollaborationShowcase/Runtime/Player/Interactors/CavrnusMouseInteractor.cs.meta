@@ -1,0 +1,10 @@
+fileFormatVersion: 2
+guid: 9e288d23b9a1435aa8ff4d8e6f0a6396
+timeCreated: 1701117408
+AssetOrigin:
+  serializedVersion: 1
+  productId: 328595
+  packageName: Cavrnus | Collaboration with Voice & Chat
+  packageVersion: 3.1.7
+  assetPath: Assets/cavrnus-spatial-connector-unity/Samples/CollaborationShowcase/Runtime/Player/Interactors/CavrnusMouseInteractor.cs
+  uploadId: 795508

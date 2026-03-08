@@ -1,0 +1,10 @@
+fileFormatVersion: 2
+guid: 933008312d8e43598bc15d2df028033f
+timeCreated: 1726620132
+AssetOrigin:
+  serializedVersion: 1
+  productId: 328595
+  packageName: Cavrnus | Collaboration with Voice & Chat
+  packageVersion: 3.1.7
+  assetPath: Assets/cavrnus-spatial-connector-unity/Runtime/UI/MinimalUI/TranscriptionHUD/CavrnusTranscriptionHUD.cs
+  uploadId: 795508
