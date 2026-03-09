@@ -1,16 +1,9 @@
 using UnityEngine;
 
-/// <summary>
-/// Attach to your Bullet prefab.
-/// Moves in a set direction and destroys itself after 5 seconds.
-/// </summary>
 [RequireComponent(typeof(Rigidbody2D))]
 public class Bullet2D : MonoBehaviour
 {
-    [Header("Bullet Settings")]
-    [SerializeField] private float speed = 20f;
-    [SerializeField] private float lifetime = 5f; // Disappears after 5 seconds
-
+    private float damage = 25f;
     private Rigidbody2D rb;
 
     private void Awake()
@@ -20,15 +13,44 @@ public class Bullet2D : MonoBehaviour
         rb.collisionDetectionMode = CollisionDetectionMode2D.Continuous;
     }
 
-    public void SetDirection(Vector2 direction)
+    public void SetProperties(Vector2 direction, float speed, float lifetime, float bulletDamage)
     {
         rb.linearVelocity = direction.normalized * speed;
+        damage = bulletDamage;
         Destroy(gameObject, lifetime);
+    }
+
+    // Keep old SetDirection for compatibility
+    public void SetDirection(Vector2 direction)
+    {
+        rb.linearVelocity = direction.normalized * 20f;
+        Destroy(gameObject, 5f);
     }
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.CompareTag("Player")) return;
+        HandleHit(other.gameObject);
+    }
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        HandleHit(collision.gameObject);
+    }
+
+    private void HandleHit(GameObject hit)
+    {
+        if (hit.CompareTag("Player")) return;
+
+        if (hit.CompareTag("Enemy"))
+        {
+            EnemyScript enemy = hit.GetComponent<EnemyScript>();
+            if (enemy != null)
+                enemy.TakeDamage(damage);
+
+            Destroy(gameObject);
+            return;
+        }
+
         Destroy(gameObject);
     }
 }

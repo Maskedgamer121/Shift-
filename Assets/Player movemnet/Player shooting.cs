@@ -1,7 +1,7 @@
 using UnityEngine;
 
 /// <summary>
-/// Shoots 6 bullets then reloads for 3 seconds.
+/// Shoots bullets toward the mouse with spread and multiple bullet support.
 /// Attach to your Player GameObject.
 /// </summary>
 public class Shooter2D : MonoBehaviour
@@ -10,6 +10,13 @@ public class Shooter2D : MonoBehaviour
     [SerializeField] private GameObject bulletPrefab;
     [SerializeField] private Transform firePoint;
     [SerializeField] private float fireRate = 0.2f;
+
+    [Header("Bullet Properties")]
+    [SerializeField] private int bulletsPerShot = 1;        // How many bullets per click
+    [SerializeField] private float spreadAngle = 15f;       // Spread in degrees between bullets
+    [SerializeField] private float bulletSpeed = 20f;       // How fast bullets travel
+    [SerializeField] private float bulletLifetime = 5f;     // How long before bullet disappears
+    [SerializeField] private float bulletDamage = 25f;      // Damage per bullet
 
     [Header("Ammo Settings")]
     [SerializeField] private int maxAmmo = 6;
@@ -29,12 +36,9 @@ public class Shooter2D : MonoBehaviour
         mainCamera = Camera.main;
         currentAmmo = maxAmmo;
 
-        if (mainCamera == null)
-            Debug.LogError("Shooter2D: Main Camera not found!");
-        if (firePoint == null)
-            Debug.LogError("Shooter2D: FirePoint is not assigned!");
-        if (bulletPrefab == null)
-            Debug.LogError("Shooter2D: Bullet Prefab is not assigned!");
+        if (mainCamera == null) Debug.LogError("Shooter2D: Main Camera not found!");
+        if (firePoint == null) Debug.LogError("Shooter2D: FirePoint is not assigned!");
+        if (bulletPrefab == null) Debug.LogError("Shooter2D: Bullet Prefab is not assigned!");
     }
 
     private void Update()
@@ -56,8 +60,6 @@ public class Shooter2D : MonoBehaviour
         if (isReloading)
         {
             reloadTimer -= Time.deltaTime;
-            Debug.Log("Reloading... " + reloadTimer.ToString("F1") + "s");
-
             if (reloadTimer <= 0f)
             {
                 isReloading = false;
@@ -66,11 +68,8 @@ public class Shooter2D : MonoBehaviour
             }
         }
 
-        // Manual reload with R key
         if (Input.GetKeyDown(KeyCode.R) && !isReloading && currentAmmo < maxAmmo)
-        {
             StartReload();
-        }
     }
 
     private void StartReload()
@@ -96,26 +95,34 @@ public class Shooter2D : MonoBehaviour
     {
         if (bulletPrefab == null || firePoint == null) return;
 
-        GameObject bullet = Instantiate(bulletPrefab, firePoint.position, firePoint.rotation);
-        Bullet2D bulletScript = bullet.GetComponent<Bullet2D>();
+        // Calculate spread for multiple bullets
+        float totalSpread = spreadAngle * (bulletsPerShot - 1);
+        float startAngle = -totalSpread / 2f;
 
-        if (bulletScript == null)
+        for (int i = 0; i < bulletsPerShot; i++)
         {
-            Debug.LogError("Shooter2D: Bullet2D script not found on prefab!");
-            Destroy(bullet);
-            return;
+            float angleOffset = startAngle + (spreadAngle * i);
+            Quaternion rotation = firePoint.rotation * Quaternion.Euler(0f, 0f, angleOffset);
+            Vector2 direction = rotation * Vector2.right;
+
+            GameObject bullet = Instantiate(bulletPrefab, firePoint.position, rotation);
+            Bullet2D bulletScript = bullet.GetComponent<Bullet2D>();
+
+            if (bulletScript == null)
+            {
+                Destroy(bullet);
+                return;
+            }
+
+            // Pass properties to bullet
+            bulletScript.SetProperties(direction, bulletSpeed, bulletLifetime, bulletDamage);
         }
 
-        bulletScript.SetDirection(firePoint.right);
         currentAmmo--;
-
-        Debug.Log("Ammo: " + currentAmmo + "/" + maxAmmo);
-
         if (currentAmmo <= 0)
             StartReload();
     }
 
-    // Display ammo and reload status on screen
     private void OnGUI()
     {
         GUIStyle style = new GUIStyle();
