@@ -12,6 +12,7 @@ public class EnemyScript : MonoBehaviour
     public float currentHealth = 100f;
 
     private GameObject player;
+    private PlayerHealth playerHealth;
     private float nextAttackTime;
 
     void Update()
@@ -19,22 +20,18 @@ public class EnemyScript : MonoBehaviour
         if (player == null)
         {
             player = GameObject.FindGameObjectWithTag("Player");
+            if (player != null)
+                playerHealth = player.GetComponent<PlayerHealth>();
             return;
         }
 
-        // 1. Calculate distance in 2D
         float distance = Vector2.Distance(transform.position, player.transform.position);
 
         if (distance <= detectionRange)
         {
-            // 2. Move towards player (2D logic)
             if (distance > stopDistance)
-            {
-                // Move position without rotating the object (prevents vanishing)
                 transform.position = Vector2.MoveTowards(transform.position, player.transform.position, moveSpeed * Time.deltaTime);
-            }
 
-            // 3. Attack logic
             if (distance <= attackRadius && Time.time >= nextAttackTime)
             {
                 Attack();
@@ -45,20 +42,25 @@ public class EnemyScript : MonoBehaviour
 
     void Attack()
     {
-        Debug.Log("Enemy Attacking Player!");
-        // Optional: Damage the player here
+        if (playerHealth != null)
+        {
+            playerHealth.TakeDamage(attackDamage);
+            Debug.Log("Enemy attacked player for " + attackDamage + " damage!");
+        }
     }
 
     public void TakeDamage(float amount)
     {
         currentHealth -= amount;
+        Debug.Log("Enemy took " + amount + " damage! HP: " + currentHealth);
+
         if (currentHealth <= 0)
         {
+            Debug.Log("Enemy Died!");
             Destroy(gameObject);
         }
     }
 
-    // Visualize ranges in Scene view
     void OnDrawGizmosSelected()
     {
         Gizmos.color = Color.yellow;
