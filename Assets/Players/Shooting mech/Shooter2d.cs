@@ -1,7 +1,6 @@
 using UnityEngine;
-using System.Collections;
 
-public class PlayerShooter : MonoBehaviour
+public class Shooter2D : MonoBehaviour
 {
     [Header("References")]
     [SerializeField] private GameObject bulletPrefab;
@@ -9,25 +8,25 @@ public class PlayerShooter : MonoBehaviour
 
     [Header("Fire Settings")]
     [SerializeField] private float fireRate = 0.2f;
-    [SerializeField] private bool holdToShoot = true;
+    [SerializeField] private bool holdToShoot = true;        // true = hold mouse, false = click per shot
 
     [Header("Bullet Count & Spread")]
-    [SerializeField] private int bulletsPerShot = 1;
-    [SerializeField] private float spreadAngle = 20f;
-    [SerializeField] private float randomSpread = 0f;
-    [SerializeField] private bool evenSpread = true;
+    [SerializeField] private int bulletsPerShot = 1;         // How many bullets per shot
+    [SerializeField] private float spreadAngle = 20f;        // Angle between each bullet
+    [SerializeField] private float randomSpread = 0f;        // Extra random spread per bullet (0 = no random)
+    [SerializeField] private bool evenSpread = true;         // true = evenly spaced, false = random spray
 
     [Header("Bullet Stats")]
-    [SerializeField] private float bulletSpeed = 20f;
-    [SerializeField] private float bulletRange = 10f;
-    [SerializeField] private float bulletLifetime = 5f;
-    [SerializeField] private float bulletDamage = 25f;
-    [SerializeField] private float bulletSize = 1f;
+    [SerializeField] private float bulletSpeed = 20f;        // How fast bullets travel
+    [SerializeField] private float bulletRange = 10f;        // How far bullets travel
+    [SerializeField] private float bulletLifetime = 5f;      // Max time before bullet disappears
+    [SerializeField] private float bulletDamage = 25f;       // Damage per bullet
+    [SerializeField] private float bulletSize = 1f;          // Scale of bullet
 
     [Header("Burst Settings")]
-    [SerializeField] private bool burstMode = false;
-    [SerializeField] private int burstCount = 3;
-    [SerializeField] private float burstDelay = 0.05f;
+    [SerializeField] private bool burstMode = false;         // Fire in bursts
+    [SerializeField] private int burstCount = 3;             // Bullets per burst
+    [SerializeField] private float burstDelay = 0.05f;       // Delay between burst bullets
 
     [Header("Ammo Settings")]
     [SerializeField] private int maxAmmo = 6;
@@ -68,7 +67,7 @@ public class PlayerShooter : MonoBehaviour
         }
     }
 
-    private IEnumerator FireBurst()
+    private System.Collections.IEnumerator FireBurst()
     {
         for (int i = 0; i < burstCount; i++)
         {
@@ -139,6 +138,7 @@ public class PlayerShooter : MonoBehaviour
             }
             else
             {
+                // Random spray within total spread
                 for (int i = 0; i < bulletsPerShot; i++)
                 {
                     float angleOffset = Random.Range(-spreadAngle, spreadAngle);
@@ -158,6 +158,7 @@ public class PlayerShooter : MonoBehaviour
         float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
         GameObject bullet = Instantiate(bulletPrefab, position, Quaternion.Euler(0, 0, angle));
 
+        // Apply bullet size
         bullet.transform.localScale = Vector3.one * bulletSize;
 
         Bullet2D bulletScript = bullet.GetComponent<Bullet2D>();
@@ -165,6 +166,27 @@ public class PlayerShooter : MonoBehaviour
             bulletScript.SetProperties(direction, bulletSpeed, bulletLifetime, bulletDamage, bulletRange);
         else
             Destroy(bullet);
+    }
+
+    public void SetConfig(float _fireRate, int _bulletsPerShot, float _spreadAngle, float _randomSpread,
+        float _bulletSpeed, float _bulletRange, float _bulletLifetime, float _bulletDamage,
+        float _bulletSize, bool _burstMode, int _burstCount, float _burstDelay, int _maxAmmo, float _reloadTime)
+    {
+        fireRate = _fireRate;
+        bulletsPerShot = _bulletsPerShot;
+        spreadAngle = _spreadAngle;
+        randomSpread = _randomSpread;
+        bulletSpeed = _bulletSpeed;
+        bulletRange = _bulletRange;
+        bulletLifetime = _bulletLifetime;
+        bulletDamage = _bulletDamage;
+        bulletSize = _bulletSize;
+        burstMode = _burstMode;
+        burstCount = _burstCount;
+        burstDelay = _burstDelay;
+        maxAmmo = _maxAmmo;
+        reloadTime = _reloadTime;
+        currentAmmo = maxAmmo;
     }
 
     private void OnGUI()
