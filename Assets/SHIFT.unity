@@ -184,6 +184,7 @@ GameObject:
   - component: {fileID: 540874447}
   - component: {fileID: 540874451}
   - component: {fileID: 540874452}
+  - component: {fileID: 540874453}
   m_Layer: 0
   m_Name: Circle
   m_TagString: Untagged
@@ -452,6 +453,18 @@ CircleCollider2D:
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0}
   m_Radius: 0.5
+--- !u!114 &540874453
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 540874446}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 94f5e3784fcdaee41af1fd162a192ccd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &907982480
 GameObject:
   m_ObjectHideFlags: 0
@@ -951,20 +964,28 @@ MonoBehaviour:
   m_GameObject: {fileID: 1836588045}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: aa0d5057b919b0e4aac59cd652a6d78b, type: 3}
+  m_Script: {fileID: 11500000, guid: 03e72bd1041269c448eea60876c694a0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   bulletPrefab: {fileID: 540874446}
   firePoint: {fileID: 1997138660}
-  fireRate: 0.4
-  bulletsPerShot: 2
-  spreadAngle: 15
+  fireRate: 0.2
+  holdToShoot: 1
+  bulletsPerShot: 1
+  spreadAngle: 20
+  randomSpread: 0
+  evenSpread: 1
   bulletSpeed: 20
+  bulletRange: 10
   bulletLifetime: 5
   bulletDamage: 25
+  bulletSize: 1
+  burstMode: 0
+  burstCount: 3
+  burstDelay: 0.05
   maxAmmo: 6
   reloadTime: 2.5
-  orbitRadius: 1.5
+  orbitRadius: 1
 --- !u!95 &1836588051
 Animator:
   serializedVersion: 7
@@ -1110,6 +1131,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1997138660}
   - component: {fileID: 1997138661}
+  - component: {fileID: 1997138663}
   m_Layer: 0
   m_Name: Fitrpoiny
   m_TagString: Untagged
@@ -1187,6 +1209,33 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!50 &1997138663
+Rigidbody2D:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1997138659}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDamping: 0
+  m_AngularDamping: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
