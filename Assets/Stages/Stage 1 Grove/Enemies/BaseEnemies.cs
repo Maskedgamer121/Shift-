@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class EnemyScript : MonoBehaviour
 {
@@ -17,6 +18,9 @@ public class EnemyScript : MonoBehaviour
 
     void Update()
     {
+        // Only act when in the game scene
+        if (SceneManager.GetActiveScene().name != "SHIFT") return;
+
         if (player == null)
         {
             player = GameObject.FindGameObjectWithTag("Player");
@@ -57,6 +61,8 @@ public class EnemyScript : MonoBehaviour
         if (currentHealth <= 0)
         {
             Debug.Log("Enemy Died!");
+            TotalKills.count++;
+            EnemySpawner.currentEnemyCount--;
             Destroy(gameObject);
         }
     }

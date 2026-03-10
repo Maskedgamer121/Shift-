@@ -28,7 +28,7 @@ public class PlayerHealth : MonoBehaviour
     private void Die()
     {
         Debug.Log("Player Died!");
-        // Add your death logic here (respawn, game over screen, etc.)
+        EndScreen.IsGameOver = true;
     }
 
     private void OnGUI()
