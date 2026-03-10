@@ -55,6 +55,7 @@ public class Shooter2D : MonoBehaviour
         HandleReload();
 
         bool fireInput = holdToShoot ? Input.GetMouseButton(0) : Input.GetMouseButtonDown(0);
+        if (BulletConfigUI.IsPanelOpen) fireInput = false;
 
         if (!isReloading && fireInput && Time.time >= nextFireTime)
         {
