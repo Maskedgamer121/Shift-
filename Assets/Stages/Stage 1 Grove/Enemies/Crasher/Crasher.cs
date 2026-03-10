@@ -14,6 +14,12 @@ public class Crasher : MonoBehaviour
     private GameObject player;
     private PlayerHealth playerHealth;
     private float nextAttackTime;
+    private SpriteRenderer spriteRenderer;
+
+    void Start()
+    {
+        spriteRenderer = GetComponent<SpriteRenderer>();
+    }
 
     void Update()
     {
@@ -56,14 +62,14 @@ public class Crasher : MonoBehaviour
         Debug.Log("Enemy took " + amount + " damage! HP: " + currentHealth);
 
         if (currentHealth <= 0)
-        {
-            Debug.Log("Enemy Died!");
             Die();
-        }
     }
 
     void Die()
     {
+        if (spriteRenderer != null)
+            spriteRenderer.color = new Color(1f, 0.5f, 0f);
+
         Collider2D[] hitObjects = Physics2D.OverlapCircleAll(transform.position, attackRadius);
 
         foreach (Collider2D collider in hitObjects)
@@ -74,23 +80,16 @@ public class Crasher : MonoBehaviour
             {
                 PlayerHealth pHealth = collider.GetComponent<PlayerHealth>();
                 if (pHealth != null)
-                {
                     pHealth.TakeDamage(attackDamage);
-                    Debug.Log("Player took " + attackDamage + " damage from enemy explosion!");
-                }
             }
             else if (collider.CompareTag("Enemy"))
             {
                 Crasher crasher = collider.GetComponent<Crasher>();
                 if (crasher != null)
-                {
                     crasher.TakeDamage(attackDamage);
-                    Debug.Log("Enemy took " + attackDamage + " damage from explosion!");
-                }
             }
         }
 
-        Debug.Log("Enemy Exploded!");
         Destroy(gameObject);
     }
 
