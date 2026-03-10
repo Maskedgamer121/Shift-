@@ -11,7 +11,11 @@ GameObject:
   - component: {fileID: 696763464617969141}
   - component: {fileID: 4418159439024731908}
   - component: {fileID: 2798768521914214886}
+<<<<<<< Updated upstream
   - component: {fileID: -351489637635013608}
+=======
+  - component: {fileID: -8627736410759876511}
+>>>>>>> Stashed changes
   m_Layer: 0
   m_Name: Slasher
   m_TagString: Enemy
@@ -101,14 +105,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4998e348c934f8a4aa7a8959d7c5f259, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  detectionRange: 21
+  detectionRange: 20
   moveSpeed: 4
-  stopDistance: 1.5
+  stopDistance: 1.2
   attackRadius: 1.8
   attackDamage: 10
   attackSpeed: 0.8
   currentHealth: 18
+<<<<<<< Updated upstream
 --- !u!61 &-351489637635013608
+=======
+--- !u!61 &-8627736410759876511
+>>>>>>> Stashed changes
 BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
