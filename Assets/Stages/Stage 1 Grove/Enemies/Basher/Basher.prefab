@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 1631411749981452429}
   - component: {fileID: 2343911808185751971}
   m_Layer: 0
-  m_Name: Enemie
+  m_Name: Basher
   m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
